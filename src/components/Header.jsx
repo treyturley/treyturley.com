@@ -37,6 +37,10 @@ function Header() {
                 FSE Job Finder
               </NavDropdown.Item>
             </NavDropdown>
+
+            <Nav.Link as={Link} to='/skullking-scorecard'>
+              Skull King Scorecard
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
