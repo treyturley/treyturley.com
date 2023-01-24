@@ -17,27 +17,33 @@ function Header() {
             <Nav.Link as={Link} to='/'>
               Home
             </Nav.Link>
-
-            <Nav.Link as={Link} to='#Resume'>
+            <Nav.Link
+              as='a'
+              href='https://my.indeed.com/p/treyt-q42vckn'
+              target='_blank'
+              rel='noreferrer'
+            >
               Resume
             </Nav.Link>
-
-            <Nav.Link as={Link} to='#Contact'>
+            <Nav.Link
+              as='a'
+              href='mailto:tturley08+contact@gmail.com'
+              target='_blank'
+              rel='noreferrer'
+            >
               Contact
             </Nav.Link>
-
             <NavDropdown title='Project Details' id='basic-nav-dropdown'>
-              <NavDropdown.Item as={Link} to='/projects/skull-king'>
+              <NavDropdown.Item as={Link} to='/projects/skull-king-scorecard'>
                 Skull King
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to='/projects/yahtzee'>
+              <NavDropdown.Item as={Link} to='/projects/fse-data-feed'>
+                FSE Data Feed
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to='/projects/yahtzee-scorecard'>
                 Yahtzee
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to='/projects/fse-job-finder'>
-                FSE Job Finder
-              </NavDropdown.Item>
             </NavDropdown>
-
             <Nav.Link as={Link} to='/skullking-scorecard'>
               Skull King Scorecard
             </Nav.Link>
