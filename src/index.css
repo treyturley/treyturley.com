@@ -87,13 +87,7 @@ section {
 }
 
 .project-col {
-  height: 320px;
-}
-
-@media screen and (max-width: 1400px) {
-  .project-col {
-    height: auto;
-  }
+  height: auto;
 }
 
 @media screen and (max-width: 768px) {
