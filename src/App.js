@@ -8,18 +8,22 @@ import Yahtzee from './pages/projects/Yahtzee';
 
 import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <Router>
-      <Header />
-      <Container>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/projects/yahtzee' element={<Yahtzee />} />
-          <Route path='*' element={<NotFound />} />
-        </Routes>
-      </Container>
+      <div className='d-flex flex-column content'>
+        <Header />
+        <Container className='content'>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/projects/yahtzee' element={<Yahtzee />} />
+            <Route path='*' element={<NotFound />} />
+          </Routes>
+        </Container>
+        <Footer />
+      </div>
     </Router>
   );
 }
