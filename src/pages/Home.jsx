@@ -42,7 +42,7 @@ function Home() {
                 </div>
 
                 <div className='d-flex flex-column'>
-                  <div className='m-4'>
+                  <div className='m-3'>
                     <Row className='text-center'>
                       <Col xs={{ span: 4, offset: 0 }}>
                         <i className='fa-brands fa-react fa-2xl'></i>
@@ -95,6 +95,92 @@ function Home() {
               <Card.Body className='d-flex flex-column justify-content-between'>
                 <div>
                   <Card.Title>
+                    <Link to='/projects/aws-migration'>
+                      AWS Migration and Build Pipelines
+                    </Link>
+                  </Card.Title>
+
+                  <Card.Text>
+                    When Heroku dropped their free tier I decided to move over
+                    to AWS. Along the way I bought and registered my domain with
+                    Cloudflare and containerized the apps with Docker. To wrap
+                    up, I configured webhooks on Github to trigger Jenkins
+                    pipelines which handle the build and deployment process.
+                    Now, pushing changes to the production sites only requires
+                    merging a pull request with the main branch.
+                  </Card.Text>
+                </div>
+
+                <div className='d-flex flex-column'>
+                  <div className='m-3'>
+                    <Row className='text-center' xs={3} lg={3} xl={6}>
+                      <Col>
+                        <i className='fa-brands fa-aws fa-2xl icon'></i>
+                        <p className='mb-0'>AWS</p>
+                      </Col>
+                      <Col>
+                        <i className='fa-brands fa-cloudflare fa-2xl icon'></i>
+                        <p className='mb-0 '>Cloudflare</p>
+                      </Col>
+                      <Col>
+                        <i className='fa-brands fa-github fa-2xl icon'></i>
+                        <p className='mb-0 '>GitHub</p>
+                      </Col>
+                      <Col className='col-margin-top-1'>
+                        <i className='fa-brands fa-jenkins fa-2xl icon'></i>
+                        <p className='mb-0 '>Jenkins</p>
+                      </Col>
+                      <Col className='col-margin-top-1'>
+                        <i className='fa-brands fa-docker fa-2xl icon'></i>
+                        <p className='mb-0 '>Docker</p>
+                      </Col>
+                      <Col className='col-margin-top-1'>
+                        <img
+                          src='./images/icons8-nginx-32.png'
+                          alt='nginx'
+                          className='icon-img-nginx'
+                        />
+                        <p className='icon-text-nginx mb-0 '>NGINX</p>
+                      </Col>
+                    </Row>
+                  </div>
+
+                  <div className='d-grid gap-2'>
+                    <Row className='text-center'>
+                      <Col>
+                        <Card.Link
+                          as={Button}
+                          variant='dark'
+                          href='https://treyturley.com/yahtzee-scorecard'
+                          className='my-btn-wide'
+                        >
+                          Checkout The Website
+                        </Card.Link>
+                      </Col>
+                      <Col>
+                        <Card.Link
+                          as={Button}
+                          variant='dark'
+                          href='https://github.com/treyturley/yahtzee-scorecard'
+                          className='my-btn-wide'
+                        >
+                          View The Code
+                        </Card.Link>
+                      </Col>
+                    </Row>
+                  </div>
+                </div>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+
+        <Row xs={1} md={2} className='g-5 mt-0'>
+          <Col className='d-flex align-items-stretch project-col'>
+            <Card>
+              <Card.Body className='d-flex flex-column justify-content-between'>
+                <div>
+                  <Card.Title>
                     <Link to='/projects/fse-data-feed'>FSE Data Feed</Link>
                   </Card.Title>
 
@@ -109,7 +195,7 @@ function Home() {
                 </div>
 
                 <div className='d-flex flex-column'>
-                  <div className='m-4'>
+                  <div className='m-3'>
                     <Row className='text-center'>
                       <Col xs={{ span: 4, offset: 0 }}>
                         <img src='./images/dotnet.png' alt='dotnet' />
@@ -156,13 +242,8 @@ function Home() {
               </Card.Body>
             </Card>
           </Col>
-        </Row>
 
-        <Row className='mt-5'>
-          <Col
-            md={{ span: 6, offset: 3 }}
-            className='d-flex align-items-stretch project-col'
-          >
+          <Col className='d-flex align-items-stretch project-col'>
             <Card>
               <Card.Body className='d-flex flex-column justify-content-between'>
                 <div>
@@ -181,7 +262,7 @@ function Home() {
                 </div>
 
                 <div className='d-flex flex-column'>
-                  <div className='m-4'>
+                  <div className='m-3'>
                     <Row className='text-center'>
                       <Col xs={{ span: 4, offset: 0 }}>
                         <i className='fa-brands fa-html5 fa-2xl icon'></i>
@@ -230,28 +311,6 @@ function Home() {
           </Col>
         </Row>
       </section>
-
-      {/* <Row>
-        <Col md={{ span: 6, offset: 3 }}>
-          <section id='Resume' className='text-center'>
-            <h1>Resume</h1>
-            <a href='https://my.indeed.com/p/treyt-q42vckn'>
-              Checkout my on Indeed.com
-            </a>
-          </section>
-        </Col>
-      </Row>
-
-      <Row>
-        <Col md={{ span: 6, offset: 3 }}>
-          <section id='Contact' className='text-center'>
-            <h1>Contact</h1>
-            <a href='https://my.indeed.com/p/treyt-q42vckn'>
-              Checkout my on Indeed.com
-            </a>
-          </section>
-        </Col>
-      </Row> */}
     </>
   );
 }

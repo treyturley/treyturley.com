@@ -88,6 +88,10 @@ section {
   color: #212529;
 }
 
+.col-margin-top-1{
+    margin-top: 10px;
+  }
+
 @media screen and (max-width: 768px) {
   .slider-div {
     height: 700px;
@@ -100,4 +104,20 @@ section {
   li.nav-item a {
     padding-left: 0px !important;
   }
+
+  .col-margin-top-1{
+    margin-top: 10px !important;
+  }
+}
+@media screen and (max-width: 1200px) {
+.col-margin-top-1{
+    margin-top: 10px !important;
+  }
+}
+
+.icon-text-nginx{
+  margin-top: -5px;
+}
+.icon-img-nginx{
+  margin-top: -2px;
 }
