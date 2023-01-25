@@ -117,7 +117,7 @@ function Skullking() {
               </ul>
             </Col>
             <Col sm={{ span: 6 }}>
-              <div className='swiper-div'>
+              <div className='slider-div'>
                 <h3 className='text-center'>Screenshots</h3>
                 <Slider images={skullKingImages} />
               </div>
