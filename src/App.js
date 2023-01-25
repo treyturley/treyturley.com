@@ -8,6 +8,7 @@ import NotFound from './pages/NotFound';
 import Skullking from './pages/projects/Skullking';
 import FSEDataFeed from './pages/projects/FSEDataFeed';
 import Yahtzee from './pages/projects/Yahtzee';
+import AWSMigration from './pages/projects/AWSMigration';
 
 import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -26,6 +27,7 @@ function App() {
             />
             <Route path='/projects/fse-data-feed' element={<FSEDataFeed />} />
             <Route path='/projects/yahtzee-scorecard' element={<Yahtzee />} />
+            <Route path='/projects/aws-migration' element={<AWSMigration />} />
             <Route path='*' element={<NotFound />} />
           </Routes>
         </Container>
