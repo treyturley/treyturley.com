@@ -73,7 +73,7 @@ function Skullking() {
               <p>
                 Initially I had considered creating the frontend with Angular.
                 It was used regularly at Dell and I had previously completed a
-                four month long full stack course that included Angular and
+                four month long full stack course that covered Angular and
                 Spring Boot. However, as far as I could tell Angular was
                 becoming less and less popular and I was ready to try something
                 new. I chose to go with React for the frontend because it looked
@@ -109,9 +109,12 @@ function Skullking() {
                 scorecard inputs to make everything less chatty and now we have
                 realtime score and bid updates for the players.
               </p>
-              <h3>Future Improvements</h3>
-              <p>CSS consolidation and improvements</p>
-              <p>Improved graph handling</p>
+              <h3>Possible Future Enhancements</h3>
+              <ul>
+                <li>Add a database to persist games in progress</li>
+                <li>Improve score graph responsiveness for mobile devices</li>
+                <li>Continue adding pirate/ocean theme enchancements</li>
+              </ul>
             </Col>
             <Col sm={{ span: 6 }}>
               <div className='swiper-div'>
