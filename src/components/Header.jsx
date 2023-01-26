@@ -37,6 +37,9 @@ function Header() {
               <NavDropdown.Item as={Link} to='/projects/skull-king-scorecard'>
                 Skull King
               </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to='/projects/aws-migration'>
+                AWS Migration and Build Pipelines
+              </NavDropdown.Item>
               <NavDropdown.Item as={Link} to='/projects/fse-data-feed'>
                 FSE job Finder
               </NavDropdown.Item>

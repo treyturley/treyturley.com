@@ -104,9 +104,9 @@ function Home() {
                     When Heroku dropped their free tier I decided it was time to
                     move my projects to one place. I still had a few months of
                     the AWS free tier left and that would give me the most
-                    flexibility. During the move I also setup build and
-                    deployment pipelines with Jenkins to make updating the
-                    applications easy.
+                    flexibility. During the move I also setup build and deploy
+                    pipelines with Jenkins to make updating the applications
+                    easy.
                   </Card.Text>
                 </div>
 
@@ -147,24 +147,14 @@ function Home() {
                   <div className='d-grid gap-2'>
                     <Row className='text-center'>
                       <Col>
-                        <Card.Link
-                          as={Button}
-                          variant='dark'
-                          href='https://treyturley.com/yahtzee-scorecard'
+                        <Button
+                          as={Link}
+                          to='/projects/aws-migration'
                           className='my-btn-wide'
-                        >
-                          Checkout The Website
-                        </Card.Link>
-                      </Col>
-                      <Col>
-                        <Card.Link
-                          as={Button}
                           variant='dark'
-                          href='https://github.com/treyturley/yahtzee-scorecard'
-                          className='my-btn-wide'
                         >
-                          View The Code
-                        </Card.Link>
+                          View Project Details
+                        </Button>
                       </Col>
                     </Row>
                   </div>
