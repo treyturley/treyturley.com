@@ -68,6 +68,8 @@ function Home() {
                           as={Button}
                           variant='dark'
                           href='https://treyturley.com/skullking-scorecard'
+                          target='_blank'
+                          rel='noreferrer'
                           className='my-btn-wide'
                         >
                           Checkout The Website
@@ -78,6 +80,8 @@ function Home() {
                           as={Button}
                           variant='dark'
                           href='https://github.com/treyturley/sk-scorecard-react'
+                          target='_blank'
+                          rel='noreferrer'
                           className='my-btn-wide'
                         >
                           View The Code
@@ -209,7 +213,9 @@ function Home() {
                         <Card.Link
                           as={Button}
                           variant='dark'
-                          href='https://treyturley.com/yahtzee-scorecard'
+                          href='https://treyturley.com/fse-job-finder'
+                          target='_blank'
+                          rel='noreferrer'
                           className='my-btn-wide'
                         >
                           Checkout The Website
@@ -219,7 +225,9 @@ function Home() {
                         <Card.Link
                           as={Button}
                           variant='dark'
-                          href='https://github.com/treyturley/yahtzee-scorecard'
+                          href='https://github.com/treyturley/FSEJobFinder'
+                          target='_blank'
+                          rel='noreferrer'
                           className='my-btn-wide'
                         >
                           View The Code
@@ -277,6 +285,8 @@ function Home() {
                           as={Button}
                           variant='dark'
                           href='https://treyturley.com/yahtzee-scorecard'
+                          target='_blank'
+                          rel='noreferrer'
                           className='my-btn-wide'
                         >
                           Checkout The Website
@@ -287,6 +297,8 @@ function Home() {
                           as={Button}
                           variant='dark'
                           href='https://github.com/treyturley/yahtzee-scorecard'
+                          target='_blank'
+                          rel='noreferrer'
                           className='my-btn-wide'
                         >
                           View The Code
