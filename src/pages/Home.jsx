@@ -180,11 +180,11 @@ function Home() {
               <Card.Body className='d-flex flex-column justify-content-between'>
                 <div>
                   <Card.Title>
-                    <Link to='/projects/fse-data-feed'>FSE Data Feed</Link>
+                    <Link to='/projects/fse-data-feed'>FSE Job Finder</Link>
                   </Card.Title>
 
                   <Card.Text>
-                    The FSE Data Feed started as a console app that used an API
+                    The FSE Job Finder started as a console app that used an API
                     provided by FSEconomy to aggregate the airline job data.
                     This made it easy to find flights between interesting
                     locations or the ones with the best payout. It then evolved

@@ -38,7 +38,7 @@ function Header() {
                 Skull King
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to='/projects/fse-data-feed'>
-                FSE Data Feed
+                FSE job Finder
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to='/projects/yahtzee-scorecard'>
                 Yahtzee

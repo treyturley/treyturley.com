@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import Skullking from './pages/projects/Skullking';
-import FSEDataFeed from './pages/projects/FSEDataFeed';
+import FSEJobFinder from './pages/projects/FSEJobFinder';
 import Yahtzee from './pages/projects/Yahtzee';
 import AWSMigration from './pages/projects/AWSMigration';
 
@@ -25,7 +25,7 @@ function App() {
               path='/projects/skull-king-scorecard'
               element={<Skullking />}
             />
-            <Route path='/projects/fse-data-feed' element={<FSEDataFeed />} />
+            <Route path='/projects/fse-data-feed' element={<FSEJobFinder />} />
             <Route path='/projects/yahtzee-scorecard' element={<Yahtzee />} />
             <Route path='/projects/aws-migration' element={<AWSMigration />} />
             <Route path='*' element={<NotFound />} />
