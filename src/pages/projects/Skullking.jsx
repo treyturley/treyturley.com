@@ -109,11 +109,13 @@ function Skullking() {
                 scorecard inputs to make everything less chatty and now we have
                 realtime score and bid updates for the players.
               </p>
-              <h3>Possible Future Enhancements</h3>
+              <h3>Future Enhancements</h3>
               <ul>
                 <li>Add a database to persist games in progress</li>
                 <li>Improve score graph responsiveness for mobile devices</li>
-                <li>Continue adding pirate/ocean theme enchancements</li>
+                <li>
+                  Continue the pirate/ocean theme throughout the rest of the app
+                </li>
               </ul>
             </Col>
             <Col sm={{ span: 6 }}>
