@@ -197,19 +197,19 @@ function Home() {
                   <div className='m-3'>
                     <Row className='text-center'>
                       <Col xs={{ span: 4, offset: 0 }}>
+                        <i className='fa-brands fa-react fa-2xl'></i>
+                      </Col>
+                      <Col xs={{ span: 4, offset: 0 }}>
                         <img src='./images/dotnet.png' alt='dotnet' />
                       </Col>
                       <Col xs={{ span: 4, offset: 0 }}>
                         <img src='./images/api.png' alt='api' />
                       </Col>
-                      <Col xs={{ span: 4, offset: 0 }}>
-                        <i className='fa-brands fa-react fa-2xl'></i>
-                      </Col>
                     </Row>
                     <Row className='text-center'>
+                      <Col xs={{ span: 4, offset: 0 }}>React</Col>
                       <Col xs={{ span: 4, offset: 0 }}>ASP.NET</Col>
                       <Col xs={{ span: 4, offset: 0 }}>REST API</Col>
-                      <Col xs={{ span: 4, offset: 0 }}>React</Col>
                     </Row>
                   </div>
 
