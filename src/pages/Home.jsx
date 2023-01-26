@@ -101,13 +101,12 @@ function Home() {
                   </Card.Title>
 
                   <Card.Text>
-                    When Heroku dropped their free tier I decided to move over
-                    to AWS. Along the way I bought and registered my domain with
-                    Cloudflare and containerized the apps with Docker. To wrap
-                    up, I configured webhooks on Github to trigger Jenkins
-                    pipelines which handle the build and deployment process.
-                    Now, pushing changes to the production sites only requires
-                    merging a pull request with the main branch.
+                    When Heroku dropped their free tier I decided it was time to
+                    move my projects to one place. I still had a few months of
+                    the AWS free tier left and that would give me the most
+                    flexibility. During the move I also setup build and
+                    deployment pipelines with Jenkins to make updating the
+                    applications easy.
                   </Card.Text>
                 </div>
 
