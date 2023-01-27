@@ -1,11 +1,12 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper';
+import { Navigation, Pagination, A11y } from 'swiper';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import 'swiper/css/a11y';
 
 function Slider({ images }) {
   if (!images) {
@@ -19,7 +20,7 @@ function Slider({ images }) {
         type: 'bullets',
         clickable: true,
       }}
-      modules={[Navigation, Pagination]}
+      modules={[Navigation, Pagination, A11y]}
     >
       {images.map((image) => (
         <SwiperSlide key={image.description}>
