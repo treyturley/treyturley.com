@@ -47,7 +47,7 @@ function Header() {
                 Yahtzee
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link as={Link} to='/skullking-scorecard'>
+            <Nav.Link as='a' href='https://treyturley.com/skullking-scorecard'>
               Skull King Scorecard
             </Nav.Link>
           </Nav>
