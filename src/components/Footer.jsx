@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
-    // TODO: finish footer links
     <Container>
       <footer className='d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top'>
         <p className='col-md-4 mb-0 text-muted'>&copy; 2023 Trey Turley</p>
@@ -34,14 +33,6 @@ function Footer() {
               Contact
             </a>
           </li>
-          {/* <li className='nav-item'>
-            <Link
-              to='/projects'
-              className='nav-link px-2 text-muted text-nowrap'
-            >
-              Projects
-            </Link>
-          </li> */}
           <li className='nav-item'>
             <Link
               to='/skullking-scorecard'
