@@ -7,7 +7,7 @@ function Yahtzee() {
   const yahtzeeImages = [
     {
       description: 'Yahtzee Scorecard',
-      imagePath: '../images/Yahtzee_Scorecard.png',
+      imagePath: '/images/Yahtzee_Scorecard.png',
     },
   ];
 

@@ -139,7 +139,7 @@ function Home() {
                       </Col>
                       <Col className='col-margin-top-1'>
                         <img
-                          src='./images/icons8-nginx-32.png'
+                          src='/images/icons8-nginx-32.png'
                           alt='nginx'
                           className='icon-img-nginx'
                         />
@@ -194,10 +194,10 @@ function Home() {
                         <i className='fa-brands fa-react fa-2xl'></i>
                       </Col>
                       <Col xs={{ span: 4, offset: 0 }}>
-                        <img src='./images/dotnet.png' alt='dotnet' />
+                        <img src='/images/dotnet.png' alt='dotnet' />
                       </Col>
                       <Col xs={{ span: 4, offset: 0 }}>
-                        <img src='./images/api.png' alt='api' />
+                        <img src='/images/api.png' alt='api' />
                       </Col>
                     </Row>
                     <Row className='text-center'>

@@ -5,47 +5,47 @@ function Skullking() {
   const skullKingImages = [
     {
       description: 'Homepage',
-      imagePath: '../images/skullking-homepage.png',
+      imagePath: '/images/skullking-homepage.png',
     },
     {
       description: 'Game Setup',
-      imagePath: '../images/skullking-game-setup.png',
+      imagePath: '/images/skullking-game-setup.png',
     },
     {
       description: 'Scorekeeper View',
-      imagePath: '../images/skullking-scorekeeper-1.png',
+      imagePath: '/images/skullking-scorekeeper-1.png',
     },
     {
       description: 'Scorekeeper Continued',
-      imagePath: '../images/skullking-scorekeeper-2.png',
+      imagePath: '/images/skullking-scorekeeper-2.png',
     },
     {
       description: 'Scorekeeper Round Details',
-      imagePath: '../images/skullking-scorekeeper-3.png',
+      imagePath: '/images/skullking-scorekeeper-3.png',
     },
     {
       description: 'Scorekeeper Round Expanded',
-      imagePath: '../images/skullking-scorekeeper-4-expanded-scores.png',
+      imagePath: '/images/skullking-scorekeeper-4-expanded-scores.png',
     },
     {
       description: 'Scorekeeper Game Summary',
-      imagePath: '../images/skullking-scorekeeper-5-summary.png',
+      imagePath: '/images/skullking-scorekeeper-5-summary.png',
     },
     {
       description: 'Join Game',
-      imagePath: '../images/skullking-join-game.png',
+      imagePath: '/images/skullking-join-game.png',
     },
     {
       description: 'Player View',
-      imagePath: '../images/skullking-player-view-1.png',
+      imagePath: '/images/skullking-player-view-1.png',
     },
     {
       description: 'Player View Expanded',
-      imagePath: '../images/skullking-player-view-2.png',
+      imagePath: '/images/skullking-player-view-2.png',
     },
     {
       description: 'Player View Summary',
-      imagePath: '../images/skullking-player-view-3-finished.png',
+      imagePath: '/images/skullking-player-view-3-finished.png',
     },
   ];
 
