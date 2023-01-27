@@ -2,8 +2,6 @@ import { Col, Container, Row } from 'react-bootstrap';
 import Slider from '../../components/Slider';
 
 function Skullking() {
-  // TODO: Copy for motiviation for this project, tech stack selection and why, any challenges faced, and next features that could be added
-
   const skullKingImages = [
     {
       description: 'Homepage',
@@ -71,43 +69,58 @@ function Skullking() {
               </p>
               <h3>Tech Stack</h3>
               <p>
-                Initially I had considered creating the frontend with Angular.
-                It was used regularly at Dell and I had previously completed a
-                four month long full stack course that covered Angular and
-                Spring Boot. However, as far as I could tell Angular was
-                becoming less and less popular and I was ready to try something
-                new. I chose to go with React for the frontend because it looked
-                to be the most popular and there were plenty of tutorials on
-                Youtube and classes on Udemy to pick from. I knew if I got stuck
-                on something it would be easy to find help and getting to learn
-                something new would help keep the project interesting. When the
-                need for a backend became apparent I opted to use Express as it
-                was regularly showing up alongside React tutorials and looked
-                like a quicky and easy way to get a REST API up and running.
+                For the frontend I was looking at using either Angular or React.
+                I had some prior experience with Angular from some work projects
+                so I could continue expanding on that or I could try React. I
+                decided learning React would be more fun and I could compare it
+                with how things worked with Angular. React is also a very
+                popular library so there were plenty of courses to pick from on
+                Udemy and Youtube tutorials to fill in any gaps.
+              </p>
+              <p>
+                Initially the scorecard was just going to be used by the player
+                keeping score, but after a couple game nights the feature
+                requests started coming in. The next step was to create a rest
+                API with Express that would track the scorecard state. Now the
+                scorekeeper could push score updates and players could refresh
+                to get the latest score info. To improve the overall experience
+                the next request was to add a way to see the other players bids.
+                I also wanted to make the players view update automatically
+                whenever the scorekeeper pushed an update. This was one of the
+                more challenging additions and more info on how it was
+                implemented can be found in the section below.
               </p>
               <h3>Challenges</h3>
               <p>
-                Everyone wanted a way to see the bids for the current round and
-                the overall scores. Knowing someone elses bid is critical when
-                you want to force them into taking a trick that they don't want.
-                Setting up an Express server with some basic REST API CRUD
-                operations was straightforward and that took care of tracking
-                the game state. However, this was not going to work for creating
-                an observer pattern and pushing updates to the players. Long
-                polling would be used for the first version of the player screen
-                while a better solution was researched.
+                Everyone wanted a way to see the bids for the current round in
+                the app because knowing someone elses bid is critical when you
+                want to force them into taking a trick that they don't want.
+                Skull King provides a couple cards to indicate your bid but it
+                was easy to forget to update them after bidding and they could
+                be hard to see from across the table. To keep the pace of the
+                game flowing smoothly the bid updates and score updates needed
+                to be pushed to the players automatically after the scorekeeper
+                updated them.
               </p>
               <p>
-                After poking around to see what was out there I discoverd Web
-                Sockets and the Socket.IO library. This is excactly what I
-                needed to be able to push updates in realtime. Whenever the
-                scorekeeper made a change to the scorecard, a put request was
-                made to the REST API with the new scorecard info. After updating
-                the scorecard state on the server side, a message containing the
-                latest score info was sent via websocket to each of the players
-                that had joined the game. I added in a little debouncing on the
-                scorecard inputs to make everything less chatty and now we have
-                realtime score and bid updates for the players.
+                Setting up the Express server with some basic rest API CRUD
+                operations was straightforward and that took care of tracking
+                the game state. However, this was not going to work for
+                implementing an observer pattern with the scorekeeper and
+                players. The first version of the automatic updates used long
+                polling while I looked for a better solution.
+              </p>
+              <p>
+                After poking around for a bit I discoverd Web Sockets and the
+                Socket.IO library. This was excactly what I needed to be able to
+                push updates in realtime. Now, whenever the scorekeeper made a
+                change to the scorecard, a put request was made to the rest API
+                with the new scorecard info. After updating the scorecard state
+                on the server side, a message containing the latest score info
+                was sent via websocket to each of the players that had joined
+                the game. I added in a little debouncing on the scorecard inputs
+                to make everything less chatty and now we have realtime score
+                and bid updates for the players.
               </p>
               <h3>Future Enhancements</h3>
               <ul>
