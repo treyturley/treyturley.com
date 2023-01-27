@@ -7,11 +7,11 @@ function FSEJobFinder() {
   const fseJobFinderImages = [
     {
       description: 'Homepage',
-      imagePath: '../images/FSEJobFinder.png',
+      imagePath: '/images/FSEJobFinder.png',
     },
     {
       description: 'FSEDataFeedAPI Swagger',
-      imagePath: '../images/FSEDataFeedAPI_Swagger.png',
+      imagePath: '/images/FSEDataFeedAPI_Swagger.png',
     },
   ];
 

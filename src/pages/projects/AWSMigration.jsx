@@ -5,11 +5,11 @@ function AWSMigration() {
   const awsMigrationImages = [
     {
       description: 'Jenkins Dashboard',
-      imagePath: '../images/Jenkins-Dashboard.png',
+      imagePath: '/images/Jenkins-Dashboard.png',
     },
     {
       description: 'Sample Deploy Script',
-      imagePath: '../images/docker_deploy_script.png',
+      imagePath: '/images/docker_deploy_script.png',
     },
   ];
 
