@@ -124,7 +124,17 @@ function Skullking() {
               </p>
               <h3>Future Enhancements</h3>
               <ul>
-                <li>Add a database to persist games in progress</li>
+                <li>
+                  Add a database to persist games in progress (
+                  <a
+                    href='https://github.com/treyturley/sk-scorecard-api/pull/19'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
+                    Completed
+                  </a>
+                  )
+                </li>
                 <li>Improve score graph responsiveness for mobile devices</li>
                 <li>
                   Continue the pirate/ocean theme throughout the rest of the app
