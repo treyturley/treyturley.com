@@ -41,7 +41,7 @@ function Header() {
                 AWS Migration and Build Pipelines
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to='/projects/fse-data-feed'>
-                FSE job Finder
+                FSE Job Finder
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to='/projects/yahtzee-scorecard'>
                 Yahtzee
