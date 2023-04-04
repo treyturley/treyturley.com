@@ -114,7 +114,7 @@ function Skullking() {
                 After poking around for a bit I discoverd Web Sockets and the
                 Socket.IO library. This was excactly what I needed to be able to
                 push updates in realtime. Now, whenever the scorekeeper made a
-                change to the scorecard, a put request was made to the rest API
+                change to the scorecard, a PUT request was made to the rest API
                 with the new scorecard info. After updating the scorecard state
                 on the server side, a message containing the latest score info
                 was sent via websocket to each of the players that had joined
