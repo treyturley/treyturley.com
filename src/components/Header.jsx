@@ -20,7 +20,7 @@ function Header() {
             <Nav.Link
               as='a'
               // href='https://my.indeed.com/p/treyt-q42vckn'
-              href='/resume/Trey_Turley_Resume.pdf'
+              href='/resume/TreyTurley_Resume.pdf'
               target='_blank'
               rel='noreferrer'
             >

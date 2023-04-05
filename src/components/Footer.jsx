@@ -16,7 +16,7 @@ function Footer() {
           <li className='nav-item'>
             <a
               // href='https://my.indeed.com/p/treyt-q42vckn'
-              href='/resume/Trey_Turley_Resume.pdf'
+              href='/resume/TreyTurley_Resume.pdf'
               target='_blank'
               rel='noreferrer'
               className='nav-link px-2 text-muted'
