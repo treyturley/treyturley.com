@@ -1,5 +1,4 @@
 import { Container } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -35,12 +34,12 @@ function Footer() {
             </a>
           </li>
           <li className='nav-item'>
-            <Link
-              to='/skullking-scorecard'
-              className='nav-link px-2 text-muted text-nowrap'
+            <a
+              href='https://treyturley.com/skullking-scorecard'
+              className='nav-link px-2 text-muted'
             >
               Skull King Scorecard
-            </Link>
+            </a>
           </li>
         </ul>
         <a
