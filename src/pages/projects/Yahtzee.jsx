@@ -22,12 +22,14 @@ function Yahtzee() {
               <p>
                 Yahtzee is another game night favorite and after I mentioned
                 that I was working on a scorecard for Skull King a request for a
-                Yathzee scorecard was put in.
+                Yathzee scorecard was put in. Scores are saved in local storage
+                that way they persist in case the user accidently closes the
+                page.
               </p>
               <h3>Tech Stack</h3>
               <p>
                 This scorecard was much simpler and only required html, css, and
-                a little JavaaScript to tie it together.
+                a little JavaScript to tie it together.
               </p>
               <h3>Challenges</h3>
               <p>
@@ -40,6 +42,12 @@ function Yahtzee() {
               </p>
               <h3>Future Improvements</h3>
               <ul>
+                <li>
+                  Keeping track of the final scores from previously played games
+                  could be neat. This would let players compare score from games
+                  where they used different strategies to fill out their
+                  scorecard.
+                </li>
                 <li>
                   There have been some ideas around helping players make the
                   best scoring choices by checking the scores they enter to see
