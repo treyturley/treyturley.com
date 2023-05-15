@@ -12,6 +12,9 @@ for (let i = 0; i < scoreboxToggles.length; i++) {
   scoreboxToggles[i].addEventListener('click', clickScorebox);
 }
 
+const clearScorecardBtn = document.querySelector('#clearScorecard');
+clearScorecardBtn.addEventListener('click', clearScorecard);
+
 // some rule name constants for the calculated score boxes
 const UPPER_SCORE = 'upperScore';
 const BONUS_SCORE = 'bonusScore';
@@ -40,6 +43,76 @@ class ScoreBox {
     this.game = game;
     this.rule = rule;
     this.score = score;
+  }
+}
+
+function onFirstLoad() {
+  const scorecard = JSON.parse(localStorage.getItem('scorecard'));
+  if (scorecard != null) {
+    upperScorecard = scorecard.upperScorecard;
+    lowerScorecard = scorecard.lowerScorecard;
+    setUpperScorecard(upperScorecard);
+    setLowerScorecard(lowerScorecard);
+  }
+}
+
+onFirstLoad();
+
+function setUpperScorecard(scorecard) {
+  const gameIdSet = new Set();
+  scorecard.forEach((scorebox) => {
+    gameIdSet.add(scorebox.game);
+    try {
+      document.querySelector(
+        '[name=' + `${scorebox.game}-${scorebox.rule}` + ']'
+      ).value = scorebox.score;
+    } catch (error) {
+      // anything that fails is a box that gets calculated
+    }
+  });
+
+  for (const gameId of gameIdSet) {
+    updateUpperScore(gameId);
+    checkForUpperBonus(gameId);
+    updateUpperTotalScore(gameId);
+    updateGrandTotal(gameId);
+  }
+}
+
+function setLowerScorecard(scorecard) {
+  const gameIdSet = new Set();
+
+  scorecard.forEach((scorebox) => {
+    gameIdSet.add(scorebox.game);
+    let scoreBoxElmt = document.querySelector(
+      '[name=' + `${scorebox.game}-${scorebox.rule}` + ']'
+    );
+
+    if (scoreBoxElmt) {
+      scoreBoxElmt.value = scorebox.score;
+      scoreBoxElmt.innerHTML = scorebox.score;
+    }
+  });
+  for (const gameId of gameIdSet) {
+    updateYahtzeeBonusScore(gameId);
+    updateLowerScore(gameId);
+    updateGrandTotal(gameId);
+  }
+}
+
+function saveScorecard() {
+  const scorecard = {
+    upperScorecard: [...upperScorecard],
+    lowerScorecard: [...lowerScorecard],
+  };
+
+  localStorage.setItem('scorecard', JSON.stringify(scorecard));
+}
+
+function clearScorecard() {
+  if (window.confirm('Are you sure you want to erase the scorecard?')) {
+    localStorage.removeItem('scorecard');
+    location.reload();
   }
 }
 
@@ -77,6 +150,7 @@ function onChangeUpper(e) {
   checkForUpperBonus(game);
   updateUpperTotalScore(game);
   updateGrandTotal(game);
+  saveScorecard();
 }
 
 /**
@@ -112,6 +186,7 @@ function onChangeLower(e) {
   updateYahtzeeBonusScore(game);
   updateLowerScore(game);
   updateGrandTotal(game);
+  saveScorecard();
 }
 
 /**
@@ -168,6 +243,7 @@ function clickScorebox(e) {
 
   updateLowerScore(game);
   updateGrandTotal(game);
+  saveScorecard();
 }
 
 /**
