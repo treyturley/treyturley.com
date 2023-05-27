@@ -13,8 +13,9 @@ function Home() {
             <h1>Hi, I'm Trey</h1>
             <p>
               For the past eight years I worked in performance engineering. Now
-              I'm diving into full stack web development and creating simple
-              performant websites.
+              I'm supporting the Core Engineering team at Transcore as a Test
+              Engineer. Here you will find some projects that I've put together
+              in my free time.
             </p>
           </section>
         </Col>
