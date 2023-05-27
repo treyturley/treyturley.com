@@ -4,17 +4,16 @@ function Footer() {
   return (
     <Container>
       <footer className='d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top'>
-        <p className='col-md-4 mb-0 text-muted'>&copy; 2023 Trey Turley</p>
+        <p className='col-md-4 mb-0 text-muted px-2'>&copy; 2023 Trey Turley</p>
 
-        <ul className='nav col-md-5'>
+        <ul className='nav col-md-3'>
           <li className='nav-item my-nav'>
             <a href='/' className='nav-link px-2 text-muted '>
               Home
             </a>
           </li>
-          <li className='nav-item'>
+          {/* <li className='nav-item'>
             <a
-              // href='https://my.indeed.com/p/treyt-q42vckn'
               href='/resume/TreyTurley_Resume.pdf'
               target='_blank'
               rel='noreferrer'
@@ -22,8 +21,8 @@ function Footer() {
             >
               Resume
             </a>
-          </li>
-          <li className='nav-item'>
+          </li> */}
+          {/* <li className='nav-item'>
             <a
               href='mailto:tturley08+contact@gmail.com'
               target='_blank'
@@ -32,7 +31,7 @@ function Footer() {
             >
               Contact
             </a>
-          </li>
+          </li> */}
           <li className='nav-item'>
             <a
               href='https://treyturley.com/skullking-scorecard'
@@ -45,7 +44,7 @@ function Footer() {
         <a
           href='https://www.flaticon.com/free-icons/portal'
           title='portal icons'
-          className='attribution-link text-muted'
+          className='attribution-link text-muted px-2'
         >
           Portal icons created by Pixel perfect - Flaticon
         </a>
