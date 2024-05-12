@@ -19,7 +19,7 @@ function Header() {
             </Nav.Link>
             {/* <Nav.Link
               as='a'
-              href='/resume/TreyTurley_Resume.pdf'
+              href='/resume/TreyTurley_Resume2.pdf'
               target='_blank'
               rel='noreferrer'
             >
