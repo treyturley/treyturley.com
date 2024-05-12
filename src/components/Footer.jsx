@@ -4,7 +4,7 @@ function Footer() {
   return (
     <Container>
       <footer className='d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top'>
-        <p className='col-md-4 mb-0 text-muted px-2'>&copy; 2023 Trey Turley</p>
+        <p className='col-md-4 mb-0 text-muted px-2'>&copy; {new Date().getFullYear()} Trey Turley</p>
 
         <ul className='nav col-md-3'>
           <li className='nav-item my-nav'>
