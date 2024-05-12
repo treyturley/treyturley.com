@@ -17,23 +17,22 @@ function Header() {
             <Nav.Link as={Link} to='/'>
               Home
             </Nav.Link>
-            <Nav.Link
+            {/* <Nav.Link
               as='a'
-              // href='https://my.indeed.com/p/treyt-q42vckn'
-              href='/resume/TreyTurley_Resume.pdf'
+              href='/resume/TreyTurley_Resume2.pdf'
               target='_blank'
               rel='noreferrer'
             >
               Resume
-            </Nav.Link>
-            <Nav.Link
+            </Nav.Link> */}
+            {/* <Nav.Link
               as='a'
               href='mailto:tturley08+contact@gmail.com'
               target='_blank'
               rel='noreferrer'
             >
               Contact
-            </Nav.Link>
+            </Nav.Link> */}
             <NavDropdown title='Project Details' id='basic-nav-dropdown'>
               <NavDropdown.Item as={Link} to='/projects/skull-king-scorecard'>
                 Skull King

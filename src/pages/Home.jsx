@@ -12,9 +12,7 @@ function Home() {
           <section id='main' className='text-center'>
             <h1>Hi, I'm Trey</h1>
             <p>
-              For the past eight years I worked in performance engineering. Now
-              I'm diving into full stack web development and creating simple
-              performant websites.
+              For the past eight years I worked in performance engineering. Now I'm a test engineer at Transcore working to improve the quality and reliability of the Infinity tolling solutions.
             </p>
           </section>
         </Col>
