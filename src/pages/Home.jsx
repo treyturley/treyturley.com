@@ -12,10 +12,7 @@ function Home() {
           <section id='main' className='text-center'>
             <h1>Hi, I'm Trey</h1>
             <p>
-              For the past eight years I worked in performance engineering. Now
-              I'm supporting the Core Engineering team at Transcore as a Test
-              Engineer. Here you will find some projects that I've put together
-              in my free time.
+              For the past eight years I worked in performance engineering. Now I'm a test engineer at Transcore working to improve the quality and reliability of the Infinity tolling solutions.
             </p>
           </section>
         </Col>
